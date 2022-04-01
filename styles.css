@@ -17,12 +17,12 @@ nav {
   line-height: 30px;
 }
 
-nav h2 {
+nav p {
   color: #58d090;
   font-weight: bold;
   margin: 5px;
   letter-spacing: 1px;
-  text-transform: uppercase;
+  font-size: 22px;
 }
 
 .burger {
