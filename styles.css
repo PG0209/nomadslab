@@ -1,0 +1,1178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+
+/*navbar CSS start*/
+
+nav {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px 80px;
+  line-height: 30px;
+}
+
+nav h2 {
+  color: #58d090;
+  font-weight: bold;
+  margin: 5px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.burger {
+  border: 0;
+  cursor: pointer;
+  display: none;
+  font-size: 22px;
+  position: relative;
+  padding: 0;
+  outline: none;
+  height: 30px;
+  width: 30px;
+}
+.apply {
+  color: #58d090;
+  width: 140px;
+  height: 40px;
+  text-align: center;
+  border-radius: 25px;
+  background-color: white;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  font-size: medium;
+}
+
+.burger:active {
+  color: #58d090;
+  outline: none;
+}
+
+.burger .bar {
+  background-color: #58d090;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  height: 3px;
+  width: 20px;
+  transition: transform 0.2s ease;
+}
+
+.burger .bar:first-of-type {
+  top: 40%;
+}
+
+.burger .bar:last-of-type {
+  top: 60%;
+}
+
+nav ul {
+  height: 30%;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  list-style-type: none;
+  color: black;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+nav ul a {
+  color: #58d090;
+  margin: 0 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 1;
+  text-decoration: solid underline 1px;
+  -webkit-text-decoration: solid underline;
+  -webkit-text-underline-position: under;
+  text-underline-position: under;
+  transition: all 0.3s;
+}
+ul a:hover {
+  color: #58d090;
+}
+nav ul li a {
+  position: relative;
+  color: black;
+  border: 0;
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 1;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+ul li a::after {
+  content: "";
+  background-color: #2c405e;
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  opacity: 0;
+  height: 2px;
+  width: 100%;
+  transition: transform 0.2s ease;
+}
+nav li:hover a {
+  opacity: 1;
+  color: #58d090;
+  text-decoration: solid underline 1px;
+  -webkit-text-decoration: solid underline;
+  -webkit-text-underline-position: under;
+  text-underline-position: under;
+}
+/*navbar CSS ends*/
+
+/*Banner CSS start*/
+.carousel-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.reading {
+  position: absolute;
+  top: 10%;
+}
+
+.banner-container {
+  top: 30%;
+  left: 33%;
+  position: absolute;
+}
+
+.books {
+  position: absolute;
+  left: 73%;
+  top: 30%;
+}
+
+.vist {
+  color: white;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  border-radius: 25px;
+  background-color: #58d090;
+  border: none;
+}
+.half-circle {
+  position: absolute;
+  top: 0;
+  left: 60%;
+  z-index: -1;
+}
+.circle {
+  position: absolute;
+  width: 100vh;
+  height: 100vh;
+  background-color: #ebf7fc;
+  border-radius: 50%;
+}
+.mini-circle {
+  width: 70vh;
+  height: 70vh;
+  background-color: white;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 14%;
+}
+
+.banner-content {
+  position: absolute;
+}
+.carousel-inner .carousel-item {
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 2s ease;
+}
+/*Banner CSS ends*/
+
+/* form with four inputs CSS starts */
+.form {
+  max-height: 400px;
+  background-color: #222261;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none;
+}
+.dropdown {
+  margin: 10px;
+}
+
+.dropdown-toggle {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  font-weight: 600;
+  color: black;
+  border: white;
+}
+.dropdown .btn-custom {
+  width: 200px;
+  height: 50px;
+  border-radius: 2px;
+  border: none;
+  background-color: #dc3545;
+  text-align: center;
+  font-size: medium;
+  font-weight: 600;
+}
+
+.dropdown-toggle:focus {
+  box-shadow: none !important;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-menu {
+  width: 200px;
+  border: 1px solid #222261;
+  padding: 0rem 0;
+  transform: translate3d(0px, 50px, 0px) !important;
+}
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 12px;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: #ffffff;
+  background-color: #dc3545;
+  padding: 12px;
+}
+.btn-recharge {
+  width: 200px;
+  height: 50px;
+  border: white;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #dc3545;
+  font-weight: 600;
+}
+/*form with four inputs CSS ends*/
+
+
+/*slides with controles CSS start*/
+.wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.owl-carousel {
+  max-width: 1250px;
+  margin: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.carousel .card {
+  height: 260px;
+  width: 260px;
+  border: none;
+  text-align: center;
+  margin: 20px 20px;
+  line-height: 260px;
+}
+.owl-carousel .card-1 {
+  background: #f1e3fc;
+}
+.owl-carousel .card-2 {
+  background: #e3fcfa;
+}
+.owl-carousel .card-3 {
+  background: #fcf0e3;
+}
+.owl-carousel .card-4 {
+  background: #e3f3fc;
+}
+.owl-carousel .card-5 {
+  background: #f3fce3;
+}
+.owl-carousel .card-6 {
+  background: #fceee3;
+}
+.owl-dots {
+  text-align: center;
+}
+.owl-dot {
+  height: 15px;
+  width: 45px;
+  margin: 0 5px;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid #58d090 !important;
+  transition: all 0.3s ease;
+}
+.owl-dot.active,
+.owl-dot:hover {
+  background: #58d090 !important;
+}
+
+.icons-img {
+  margin-top: 40px;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+.card .name p {
+  margin-top: -70px;
+  font-size: 32px;
+}
+/*slides with controles CSS ends*/
+
+/*video section CSS starts*/
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+.video {
+  position: relative;
+  flex: 1;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.outer-circle {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  border: 130px solid #ebf7fc;
+  border-radius: 50%;
+  right: 30%;
+}
+.video .collage-border {
+  height: 350px;
+  width: 350px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ebf7fc;
+  border-radius: 50%;
+}
+.video .college-video {
+  height: 310px;
+  width: 310px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.collage-img {
+  height: 280px;
+  width: 280px;
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+  object-fit: cover;
+}
+.discription {
+  letter-spacing: 1px;
+  flex: 1;
+  height: 400px;
+  padding: 40px 0;
+}
+
+.college-video .fa-circle-play {
+  position: absolute;
+  font-size: 58px;
+  color: #58d090;
+}
+.count {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.numbers {
+  font-weight: 700;
+}
+.titles {
+  font-weight: 700;
+}
+/*video section CSS ends*/
+
+/*Apply now CSS starts*/
+.container-fluid {
+  margin-top: 200px;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-color: #f9f7f2;
+}
+.banners {
+  position: absolute;
+  width: 50%;
+  top: 34%;
+}
+.banners p {
+  position: absolute;
+}
+
+.black-l {
+  width: 235px;
+  font-size: 40px;
+  font-weight: 700;
+  color: black;
+}
+.graduation {
+  position: absolute;
+  top: -41px;
+  right: -40px;
+}
+.standing {
+  position: absolute;
+  top: 48px;
+  right: 0px;
+}
+.container-fluid .banners p .black-l {
+  font-size: 38px;
+}
+#login-box {
+  position: absolute;
+  bottom: -125px;
+  right: 21%;
+  width: 380px;
+  height: 550px;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.left {
+  box-sizing: border-box;
+  padding: 20px;
+}
+.head-apply {
+  height: 100px;
+  text-align: center;
+  letter-spacing: 5px;
+  font-size: 30px;
+}
+
+.left input[type="text"],
+.left input[type="password"] {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 4px;
+  width: 320px;
+  height: 32px;
+  border: none;
+  border-bottom: 1px solid #aaa;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+.left input[type="submit"] {
+  margin-top: 28px;
+  width: 120px;
+  height: 32px;
+  background: #16a085;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.1s ease;
+  cursor: pointer;
+}
+
+.down {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 200px;
+}
+
+.down .tacbox {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.apply-btn-call {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.apply-call {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.have-acc {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.hv-acc {
+  text-decoration: solid underline 1px;
+  -webkit-text-decoration: solid underline;
+  -webkit-text-underline-position: under;
+  text-underline-position: under;
+}
+/*Apply now CSS ends*/
+
+/*university news CSS starts*/
+.news-section .news-head {
+  margin-top: 200px;
+  color: #58d090;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.body-content {
+  width: 450px;
+}
+.news-body {
+  margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.news-icons {
+  display: flex;
+  justify-content: space-between;
+}
+.news-icon {
+  display: flex;
+}
+/*university news CSS ends*/
+
+/*footer CSS starts*/
+footer {
+  background: #252c3a;
+}
+
+.col-lg-3 a {
+  text-decoration: none;
+}
+.col-lg-3 p {
+  color: #808083;
+}
+.input-group .btn-custom {
+  background-color: #58d090;
+  border: none;
+  width: 30%;
+}
+
+.input-group .no-border {
+  border: none;
+  box-shadow: none;
+}
+
+.footer-icons .fa-brands {
+  color: #4a4a4a;
+  font-size: 20px;
+}
+/*footer CSS ends*/
+
+/*copy right CSS starts*/
+.copyright {
+  padding: 28px 0;
+
+  background-color: #202020;
+}
+.copyright span,
+.copyright a {
+  color: #878787;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  text-decoration: none;
+  transition: all 0.3s linear;
+}
+.copyright a:hover {
+  color: #58d090;
+  text-decoration: solid underline 1px;
+  -webkit-text-decoration: solid underline;
+  -webkit-text-underline-position: under;
+  text-underline-position: under;
+}
+
+.copyright-menu ul {
+  text-align: right;
+  margin: 0;
+}
+
+.copyright-menu li {
+  display: inline-block;
+  padding-left: 20px;
+}
+/*copy right CSS ends*/
+
+/*media screen*/
+@media screen and (max-width: 1200px) {
+  .container-fluid {
+    margin-top: 250px;
+  }
+  .container-fluid .banners p .black-l {
+    font-size: 28px;
+  }
+  #login-box {
+    right: 20%;
+  }
+  .standing {
+    top: 125px;
+    right: 12px;
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  nav {
+    padding: 10px 45px;
+    line-height: 30px;
+  }
+
+  ul li {
+    margin: 0 3px;
+  }
+  ul a {
+    margin: 0 3px;
+  }
+  nav ul li {
+    margin: 0 3px;
+    color: black;
+    font-size: 10px;
+  }
+  .apply {
+    color: white;
+    background-color: #58d090;
+    width: 80px;
+    height: 30px;
+    font-size: small;
+  }
+
+  .carousel-container {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .reading {
+    top: 15%;
+    left: 0%;
+  }
+  .reading img {
+    width: 80%;
+    height: 100%;
+  }
+  .banner-container {
+    top: 35%;
+    left: 40%;
+  }
+  .banner-container h1 {
+    font-size: 26px;
+    font-weight: 600;
+  }
+  .banner-container p {
+    font-size: 14px;
+  }
+  .vist {
+    color: white;
+    width: 120px;
+    height: 35px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #58d090;
+    border: none;
+    font-size: 14px;
+  }
+  .books {
+    display: none;
+  }
+  .circle {
+    width: 80vh;
+    height: 80vh;
+  }
+  .mini-circle {
+    width: 56vh;
+    height: 56vh;
+    margin-top: 12%;
+  }
+  .carousel .card {
+    height: 180px;
+    width: 180px;
+    margin: 10px 10px;
+  }
+  .icons-img {
+    width: 40px;
+    height: 80px;
+    object-fit: contain;
+    margin-top: 25px;
+  }
+  .card .name p {
+    margin-top: -100px;
+    font-size: 20px;
+  }
+  .container-fluid {
+    margin-top: 320px;
+  }
+  .banners {
+    right: 0px;
+  }
+  .graduation {
+    margin-right: 54px;
+    height: 300px;
+    width: 500px;
+  }
+  .container-fluid .banners p {
+    margin-left: 46px;
+  }
+  .container-fluid .banners p .black-l {
+    top: -35px;
+  }
+  #login-box {
+    right: 47%;
+  }
+  .standing {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 15px 5px;
+  }
+  nav p {
+    margin: 0;
+  }
+
+  ul li {
+    margin: 0 3px;
+  }
+  ul a {
+    margin: 0 3px;
+  }
+  .apply {
+    width: 80px;
+    height: 30px;
+    align-items: center;
+  }
+
+  .section {
+    flex-direction: column;
+  }
+  .outer-circle {
+    display: none;
+  }
+  .container-fluid {
+    margin-top: 100px;
+  }
+  .graduation {
+    margin-right: 113px;
+    height: 200px;
+    width: 400px;
+  }
+  #login-box {
+    width: 330px;
+  }
+  .left input[type="text"],
+  .left input[type="password"] {
+    width: 300px;
+    padding: 2px;
+  }
+}
+
+@media screen and (max-width: 674px) {
+  nav {
+    margin: 15px 50px;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .burger.show-x .bar:first-of-type {
+    transform: translate(-50%, 50%) rotate(225deg);
+  }
+
+  .burger.show-x .bar:last-of-type {
+    transform: translate(-50%, -150%) rotate(-225deg);
+  }
+
+  ul {
+    background-color: white;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 80px;
+    left: 10%;
+    transform: translateX(120%);
+    width: 80%;
+    transition: transform 0.3s ease-in;
+    z-index: 100;
+    padding: 20px;
+    height: auto;
+  }
+  nav ul {
+    padding: 25px;
+  }
+
+  ul a li {
+    padding-top: 30px;
+  }
+
+  ul.show {
+    transform: translateX(0);
+  }
+
+  ul a {
+    margin: 10px 5px;
+  }
+  ul li {
+    margin: 0 5px;
+  }
+
+  .carousel-container {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .reading {
+    top: 15%;
+    left: -17%;
+  }
+  .reading img {
+    width: 97%;
+    height: 80%;
+  }
+  .banner-container {
+    top: 30%;
+    left: 28%;
+  }
+  .banner-container h1 {
+    font-size: 26px;
+    font-weight: 600;
+  }
+  .banner-container p {
+    font-size: 14px;
+  }
+  .vist {
+    color: white;
+    width: 120px;
+    height: 35px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #58d090;
+    border: none;
+    font-size: 14px;
+  }
+  .books {
+    display: none;
+  }
+  .circle {
+    width: 80vh;
+    height: 80vh;
+  }
+  .mini-circle {
+    width: 56vh;
+    height: 56vh;
+    margin-top: 12%;
+  }
+  .carousel .card {
+    height: 110px;
+    width: 110px;
+    margin: 10px 10px;
+  }
+  .icons-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-top: 15px;
+  }
+  .card .name p {
+    margin-top: -118px;
+    font-size: 12px;
+  }
+  .graduation {
+    display: none;
+    top: 0px;
+    right: 0px;
+  }
+  .container-fluid {
+    margin-top: -270px;
+    margin-bottom: 0;
+    width: 100%;
+    height: 800px;
+    background-color: transparent;
+  }
+  #login-box {
+    left: 7%;
+    height: 535px;
+  }
+
+  .banners {
+    width: 100%;
+    height: 100%;
+    top: 250px;
+  }
+
+  .banners p span .black-l {
+    left: 0%;
+    top: -24%;
+  }
+  .news-section .news-head {
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 480px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .burger.show-x .bar:first-of-type {
+    transform: translate(-50%, 50%) rotate(225deg);
+  }
+
+  .burger.show-x .bar:last-of-type {
+    transform: translate(-50%, -150%) rotate(-225deg);
+  }
+
+  ul {
+    background-color: #58d090;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 80px;
+    left: 10%;
+    transform: translateX(120%);
+    width: 80%;
+    transition: transform 0.3s ease-in;
+    z-index: 100;
+    padding: 20px;
+    height: 100px;
+  }
+
+  nav ul a {
+    color: white;
+  }
+  ul li {
+    margin: 15px;
+  }
+  nav li:hover a {
+    opacity: 1;
+    color: white;
+    text-decoration: solid underline 1px;
+    -webkit-text-decoration: solid underline;
+    -webkit-text-underline-position: under;
+    text-underline-position: under;
+  }
+  .apply {
+    color: #58d090;
+    background-color: white;
+  }
+
+  .carousel-container {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .reading {
+    display: none;
+  }
+
+  .carousel-container .banner-container {
+    top: 30%;
+    left: 3%;
+  }
+  .banner-container h1 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .vist {
+    color: white;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #58d090;
+    border: none;
+    font-size: 10px;
+  }
+  .books {
+    display: none;
+  }
+  .circle {
+    position: absolute;
+    width: 80vh;
+    height: 80vh;
+  }
+  .mini-circle {
+    width: 56vh;
+    height: 56vh;
+    background-color: white;
+    margin-top: 12%;
+  }
+  .wrapper .carousel .card {
+    height: 80px;
+    width: 80px;
+    margin: 15px 10px;
+  }
+  .icons-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-top: 8px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .carousel-item .carousel-container {
+    height: 50vh;
+  }
+  .banner-container .b-head {
+    font-size: medium;
+  }
+  .banner-container .bold {
+    font-size: small;
+  }
+  .collage-img {
+    height: 200px;
+    width: 200px;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    object-fit: cover;
+  }
+  .video .college-video {
+    height: 230px;
+    width: 230px;
+  }
+  .video .collage-border {
+    height: 280px;
+    width: 280px;
+  }
+  .graduation {
+    display: none;
+    top: 0px;
+    right: 0px;
+  }
+  .container-fluid {
+    margin-top: -270px;
+    margin-bottom: 0;
+    width: 100%;
+    height: 800px;
+    background-color: transparent;
+  }
+  #login-box {
+    height: 535px;
+    width: 240px;
+  }
+  .left {
+    box-sizing: border-box;
+    padding: 5px;
+  }
+  .left input[type="text"],
+  .left input[type="password"] {
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 2px;
+    width: 230px;
+    height: 32px;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    transition: 0.2s ease;
+  }
+
+  .banners {
+    width: 100%;
+    height: 100%;
+    top: 250px;
+  }
+  .banners p {
+    right: 25px;
+  }
+  .container-fluid .banners p .black-l {
+    left: 0%;
+    top: -24%;
+    font-size: 20px;
+  }
+  .news-section .news-head {
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 335px) {
+  .carousel-item .carousel-container {
+    height: 50vh;
+  }
+  .banner-container .b-head {
+    font-size: medium;
+  }
+  .banner-container .bold {
+    font-size: x-small;
+  }
+  .tacbox label {
+    font-size: small;
+  }
+  .apply-call h6 {
+    font-size: small;
+  }
+}

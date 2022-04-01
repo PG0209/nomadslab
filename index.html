@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Learned.</title>
+  <!--bootstrap script-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ 
+</head>
+
+<body>
+  <!--navbar start-->
+  <nav>
+    <h2>Learned.</h2>
+    <button id="burger" class="burger">
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </button>
+    <ul>
+      <a href="#">Study</a>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Addmission</a></li>
+      <li><a href="#">Pages</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Contact</a></li>
+      <button class="apply">Apply Now</button>
+    </ul>
+  </nav>
+  <!--navbar ends-->
+
+  <!--Banner start-->
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner w-100">
+      <div class="carousel-item active">
+        <div class="carousel-container">
+          <div class="reading">
+            <img src="./assets/reading.svg" alt="My Happy SVG" />
+          </div>
+          <div class="banner-container">
+            <h1 class="b-head" style="color: #58D090; font-weight: 600;">Innovation for education and<br />socity * 1
+            </h1>
+            <p class="bold" style="font-weight: 600;">Our interdisciplinary majors and minors means you can <br /> chart
+              your
+              own course for academic success.</p>
+            <button class="vist">visit our campus</button>
+          </div>
+          <div class="half-circle">
+            <div class="circle">
+              <div class="mini-circle"></div>
+            </div>
+          </div>
+          <div class="books">
+            <img src="./assets/books.svg" alt="books" />
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <div class="reading">
+            <img src="./assets/reading.svg" alt="My Happy SVG" />
+          </div>
+          <div class="banner-container">
+            <h1 class="b-head" style="color: #58D090; font-weight: 600;">Innovation for education and<br />socity * 2
+            </h1>
+            <p class="bold" style="font-weight: 600;">Our interdisciplinary majors and minors means you can <br /> chart
+              your
+              own course for academic success.</p>
+            <button class="vist">visit our campus</button>
+          </div>
+          <div class="half-circle">
+            <div class="circle">
+              <div class="mini-circle"></div>
+            </div>
+          </div>
+          <div class="books">
+            <img src="./assets/books.svg" alt="books" />
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <div class="reading">
+            <img src="./assets/reading.svg" alt="My Happy SVG" />
+          </div>
+          <div class="banner-container">
+            <h1 class="b-head" style="color: #58D090; font-weight: 600;">Innovation for education and<br />socity * 3
+            </h1>
+            <p class="bold" style="font-weight: 600;">Our interdisciplinary majors and minors means you can <br /> chart
+              your
+              own course for academic success.</p>
+            <button class="vist">visit our campus</button>
+          </div>
+          <div class="half-circle">
+            <div class="circle">
+              <div class="mini-circle"></div>
+            </div>
+          </div>
+          <div class="books">
+            <img src="./assets/books.svg" alt="books" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Banner ends-->
+
+  <!-- form with four inputs starts -->
+  <div class="form-section">
+    <div class="form">
+      <div class="dropdown"> <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+          data-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-location-dot"
+            style="color: #222261;"></i><span>Votre destination?</span> <i class="fa-solid fa-angle-down"
+            style="color: #222261;"></i> </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#">Australia</a></li>
+          <li><a class="dropdown-item" href="#">India</a></li>
+          <li><a class="dropdown-item" href="#">United States</a></li>
+        </ul>
+      </div>
+      <div class="dropdown"> <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+          data-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-calendar-days"
+            style="color: #222261;"></i></i><span>Periode de
+            depart</span><i class="fa-solid fa-angle-down" style="color: #222261;"></i> </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <input class="dropdown-item" type="date" placeholder="DD/MM/YYYY">
+        </ul>
+      </div>
+      <div class="dropdown"> <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+          data-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-gear"
+            style="color: #222261;"></i><span>Campagnie</span> <i class="fa-solid fa-angle-down"
+            style="color: #222261;"></i> </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#">Campagnie One</a></li>
+          <li><a class="dropdown-item" href="#">Campagnie Two</a></li>
+          <li><a class="dropdown-item" href="#">Campagnie Three</a></li>
+        </ul>
+      </div>
+      <div class="dropdown"> <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+          data-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-train-subway"
+            style="color: #222261;"></i><span>Port de depart</span> <i class="fa-solid fa-angle-down"
+            style="color: #222261;"></i> </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#">Station One</a></li>
+          <li><a class="dropdown-item" href="#">Station Two</a></li>
+          <li><a class="dropdown-item" href="#">Station Three</a></li>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <button class="btn-custom">Recharge</button>
+      </div>
+    </div>
+  </div>
+  <!-- form with four inputs ends -->
+
+  <!--slides with controles start-->
+  <div class="wrapper">
+    <div class="carousel owl-carousel">
+      <div class="card card-1">
+        <div class="icon">
+          <img class="icons-img"
+            src="https://img.icons8.com/external-nawicon-detailed-outline-nawicon/64/000000/external-engineer-labour-day-nawicon-detailed-outline-nawicon.png" />
+        </div>
+        <div class="name">
+          <p>Engineering</p>
+        </div>
+      </div>
+      <div class="card card-2">
+        <div class="icon">
+          <img class="icons-img" src="https://img.icons8.com/ios/50/000000/accounting.png" />
+        </div>
+        <div class="name">
+          <p>Accounting</p>
+        </div>
+      </div>
+      <div class="card card-3">
+        <div class="icon">
+          <img class="icons-img"
+            src="https://img.icons8.com/external-icongeek26-outline-icongeek26/64/000000/external-creative-graphic-design-icongeek26-outline-icongeek26.png" />
+        </div>
+        <div class="name">
+          <p>Creative</p>
+        </div>
+      </div>
+      <div class="card card-4">
+        <div class="icon">
+          <img class="icons-img" src="https://img.icons8.com/wired/64/000000/design.png" />
+        </div>
+        <div class="name">
+          <p>Design</p>
+        </div>
+      </div>
+      <div class="card card-5">
+        <div class="icon">
+          <img class="icons-img" src="https://img.icons8.com/dotty/80/000000/physics.png" />
+        </div>
+        <div class="name">
+          <p>Physics</p>
+        </div>
+      </div>
+      <div class="card card-6">
+        <div class="icon">
+          <img class="icons-img"
+            src="https://img.icons8.com/external-fauzidea-detailed-outline-fauzidea/64/000000/external-chemistry-back-to-school-fauzidea-detailed-outline-fauzidea.png" />
+        </div>
+        <div class="name">
+          <p>Chemistry</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--slides with controles ends-->
+
+  <!--video section starts-->
+  <div class="section container">
+    <div class="video">
+      <div class="outer-circle"></div>
+      <div class="collage-border">
+        <div class="college-video">
+          <img class="collage-img" src="./assets/vadim-sherbakov-d6ebY-faOO0-unsplash.jpg" />
+          <i class="fa-solid fa-circle-play"></i>
+        </div>
+      </div>
+    </div>
+    <div class="discription">
+      <h1 style="color:#58D090; font-weight: 650">Limitless learning, more possibilities</h1>
+      <p style="font-weight: 600;">The University of Rochester is one of the country's top-tier
+        research universities. Our campuses are home to 200
+        academic majors, more than 2,000 faculty and instructional
+        staff, and some 10,000 students approximately half of whom
+        are women.</p>
+      <p style="font-weight: 600">Learning at the University of Rochester is also on a very personal scale. Rochester
+        remains one of the smallest and most collegiate among top research universities, with smaller classes,
+        a low 10:1 student to teacher ratio, and increased interactions with faculty.</p>
+      <div class="count">
+        <div class="students" style="color: #FFBA00;">
+          <h1 class="numbers">4000</h1>
+          <p class="titles">Students</p>
+        </div>
+        <div class="courses" style="color: #FF6476;">
+          <h1 class="numbers">260</h1>
+          <p class="titles">courses</p>
+        </div>
+        <div class="hours" style="color: #43CB83;">
+          <h1 class="numbers">5679</h1>
+          <p class="titles">hours videos</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--video section ends-->
+
+  <!--Apply now starts-->
+  <div class="container-fluid">
+    <div class="banners">
+      <img class="graduation" src="./assets/graduation.svg" alt="gradation">
+      <p class="small" style="font-weight: normal; font-size:medium;">START YOUR COURSES!<span style="color: #F76C81;">
+          TRY NOW FOR
+          FREE</span><br /><span class="black-l">Are you ready to work faster?</span></p>
+    </div>
+    <div id="login-box">
+      <div class="left">
+        <div class="head-apply">
+          <p class="apply-title">Apply Now</P>
+        </div>
+        <input type="text" name="username" placeholder="Username" />
+        <input type="text" name="email" placeholder="E-Mail Address" />
+        <input type="password" name="password" placeholder="Choose Password" />
+        <input type="password" name="password2" placeholder="Confirm Password" />
+        <div class="down">
+          <div class="tacbox">
+            <input id="checkbox" type="checkbox" />&nbsp;
+            <label for="checkbox"> I agree with the terms and conditions. </label>
+          </div>
+          <div class="apply-btn-call">
+            <div class="apply-btn"><button class="vist">Apply Now</button></div>
+            <div class="apply-call">
+              <h6>or call us</h6>
+              <h6>+49 123 456 789</h6>
+            </div>
+          </div>
+          <div class="have-acc">
+            <p class="hv-acc">I already have an account</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img class="standing" src="./assets/standing.svg" alt="gradation">
+  </div>
+  <!--Apply now ends-->
+
+  <!--university news starts-->
+  <div class="news-section container">
+    <div class="news-head">
+      <div class="news-content">
+        <h1 style="flex: 1;">Our University News</h1>
+        <p class="small text-muted f-0" style="font-weight: normal; font-size:medium;">A hundred thousand grateful loves
+          to your dear papa and mamma, is your poor brother <br />recovered of his
+          rack-punch? Oh, dear! Oh, dear! How men should beware of wicked punch!</p>
+      </div>
+      <div class="news-btn">
+        <button class="vist">All news post</button>
+      </div>
+    </div>
+    <hr />
+  </div>
+  <div class="news-body container">
+    <div class="body-content">
+      <div class="inside">
+        <h3>I am from France</h3>
+        <p class="small text-muted">Now the races of these two have been for some ages utterly extinct,<br /> and
+          besides to discourse any further of them would not be at all to</p>
+      </div>
+      <div class="news-icons">
+        <div class="news-icon">
+          <div>
+            <i class="fa-solid fa-heart"></i>&nbsp; 23 &nbsp;&nbsp;
+          </div>
+          <div>
+            <i class="fa-solid fa-comment-dots"></i>&nbsp; 50
+          </div>
+        </div>
+        <div>
+          <P>5 NOVEMBER</P>
+        </div>
+      </div>
+    </div>
+    <div class="body-content">
+      <div class="inside">
+        <h3>Out of the Darkness</h3>
+        <p class="small text-muted">Looking cautiously round, to ascertain that they were not overheard,<br /> the two
+          hags cowered nearer to the fire, and chuckled heartily</p>
+      </div>
+      <div class="news-icons">
+        <div class="news-icon">
+          <div>
+            <i class="fa-solid fa-heart" style="color: #58D090;"></i>&nbsp; 234 &nbsp;&nbsp;
+          </div>
+          <div>
+            <i class="fa-solid fa-comment-dots"></i>&nbsp; 2345
+          </div>
+        </div>
+        <div>
+          <P>5 NOVEMBER</P>
+        </div>
+      </div>
+    </div>
+    <div class="body-content">
+      <div class="inside">
+        <h3>Tears for my Mom</h3>
+        <p class="small text-muted">It was some time before he obtained any answer, and the reply, when<br /> made, was
+          unpropitious</p>
+      </div>
+      <div class="news-icons">
+        <div class="news-icon">
+          <div>
+            <i class="fa-solid fa-heart"></i> 423 &nbsp;&nbsp;
+          </div>
+          <div>
+            <i class="fa-solid fa-comment-dots"></i>&nbsp; 4523
+          </div>
+        </div>
+        <div>
+          <P>5 NOVEMBER</P>
+        </div>
+      </div>
+    </div>
+    <div class="body-content">
+      <div class="inside">
+        <h3>How the internet is uniting the world</h3>
+        <p class="small text-muted">The sounded a very good reason, and Alice was pleased<br /> to know it. 'I never
+          thought of that before!' she said.</p>
+      </div>
+      <div class="news-icons">
+        <div class="news-icon">
+          <div>
+            <i class="fa-solid fa-heart"></i>&nbsp; 263 &nbsp;&nbsp;
+          </div>
+          <div>
+            <i class="fa-solid fa-comment-dots" style="color: #58D090;"></i>&nbsp; 2339
+          </div>
+        </div>
+        <div>
+          <P>5 NOVEMBER</P>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--university news ends-->
+
+  <!-- Footer starts -->
+  <footer class="w-100 py-4 flex-shrink-0">
+    <div class="container py-4">
+      <div class="row gy-4 gx-4">
+        <div class="col-lg-3 col-md-6">
+          <h5 class="h1 text-white">Learned.</h5>
+          <p style="color: #808083;">Edumodo focuses on creating magnificent education websites with ease. Take the lead
+            in the race with Learned.</p>
+          <hr style="color:#4A4A4A" />
+          <div class="footer-icons">
+            <i class="fa-brands fa-twitter"></i>&nbsp;&nbsp;
+            <i class="fa-brands fa-linkedin"></i>&nbsp;&nbsp;
+            <i style="color: #0089FD;" class="fa-brands fa-facebook"></i>&nbsp;&nbsp;
+            <i class="fa-brands fa-skype"></i>&nbsp;&nbsp;
+            <i class="fa-brands fa-pinterest"></i>&nbsp;&nbsp;
+            <i class="fa-brands fa-apple"></i>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-white mb-3">FEATURED PROGRAMS</h5>
+          <a href="#">
+            <p>Fixed responsive - <span style="color: #5D5E61;"> Just Now</span></p>
+          </a>
+          <a href="#">
+            <p>New portfolio grid layout - <span style="color: #5D5E61;"> Just Now</span></p>
+          </a>
+          <a href="#">
+            <p>Tested & approved wp 3.6 - <span style="color: #5D5E61;"> Just Now</span></p>
+          </a>
+          <a href="#">
+            <p>Fixed google map issue -<span style="color: #5D5E61;"> Just Now</span></p>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-white mb-3">LEARNING</h5>
+          <a href="#">
+            <p>Our Plans</p>
+          </a>
+          <a href="#">
+            <p>Free Trail</p>
+          </a>
+          <a href="#">
+            <p>Academic Solutions</p>
+          </a>
+          <a href="#">
+            <p>Business Solutions</p>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-3">
+          <h5 class="text-white mb-3">SUPPORTFORM</h5>
+          <p style="color: #808083;">Write your mail into below field and join our<br /> quick support forum.</p>
+          <form action="#">
+            <div class="input-group">
+              <input class="form-control no-border" type="text" placeholder="Email address"
+                aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button class="btn-custom success">Get help</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </div>
+  <!--Footer ends-->
+
+  <!--Copy right start-->
+  <div class="copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <span>Copyright © 2019 learned</span>
+        </div>
+        <div class="col-md-6">
+          <div class="copyright-menu">
+            <ul>
+              <li>
+                <a href="#">Site Map</a>
+              </li>
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#">Website Use Policy</a>
+              </li>
+              <li>
+                <a href="#">Cookie Policy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Copyrights ends-->
+
+
+  <script>
+
+    /*sliders script*/
+    const burger = document.getElementById('burger');
+    const ul = document.querySelector('nav ul');
+
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('show-x');
+      ul.classList.toggle('show');
+    });
+
+    /*sliders script with controles*/
+    $(".owl-carousel").owlCarousel({
+      margin: 10,
+      loop: false,
+      autoplay: false,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 2,
+          nav: false
+        },
+        320: {
+          items: 3,
+          nav: false
+        },
+        674: {
+          items: 3,
+          nav: false
+        },
+        992: {
+          items: 3,
+          nav: false
+        }
+      }
+    });
+
+  </script>
+</body>
+
+</html>
